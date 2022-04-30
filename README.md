@@ -4,9 +4,9 @@
 	>cd Encript_Codereview \
 	>git checkout dev \
 	>cd Dev \
-	>pip install -r requirements.txt \
+	>pip install -r requirements.txt 
 	>>Для Linux:
-	>>>python3 main.py</h3>
+	>>>python3 main.py
 	>>Для Windows:
-	>>><h3>python main.py</h3>
+	>>>python main.py
 2. 
