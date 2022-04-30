@@ -9,6 +9,14 @@
 	>>
 	>>Для Windows:
 	>>>python main.py
-2. Примеры работы проекта:
+2. Как пользоваться:
 	>Работа осуществляется с файлами, все операции выполняются в окне программы:
 	>>![Alt text](/Dev/Screenshots/Sc1.jpg?raw=true "Optional Title")
+3. Примеры работы:
+	>Шифр Цезаря
+	>>Шифровка:
+	>>>![Alt text](/Dev/Screenshots/Sc21.jpg?raw=true "Optional Title")
+	>>
+	>>Дешифровка:
+	>>>![Alt text](/Dev/Screenshots/Sc22.jpg?raw=true "Optional Title")
+	
