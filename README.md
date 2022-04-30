@@ -7,6 +7,7 @@
 	>pip install -r requirements.txt 
 	>>Для Linux:
 	>>>python3 main.py \
+	>>
 	>>Для Windows:
 	>>>python main.py
 2. 
