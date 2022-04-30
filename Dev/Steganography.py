@@ -7,6 +7,13 @@ Size = 54
 def encode_image(Input_Img_Name, Output_Img_Name, Message, Deg):
     """Шифр Стеганография.
 
+        Параметры функции:
+            Input_Img_Name - Первоначальное изображение
+            Output_Img_Name - Зашифрованное изображение
+            Message - сообщение для шифровки
+            Deg - Ступень отступа
+
+
         Переводим Аски код символа
         в двоичную систему счисления
         и шифруем в стегоконтейнер,
@@ -50,9 +57,15 @@ def encode_image(Input_Img_Name, Output_Img_Name, Message, Deg):
 def decode_image(Encoded_img, Output_txt, Symbols_to_read, Deg):
     """Дешифровка шифра Стеганография.
 
-                Аналогично, в обратную сторону.
+        Параметры функции:
+            Encoded_img - Зашифорванное изображение
+            Output_txt - Дешифрованное сообщение
+            Symbols_to_read - Размер сообщения
+            Deg - Ступень отступа
 
-        """
+        Аналогично, в обратную сторону.
+
+    """
     if Deg not in [1, 2, 4, 8]:
         return False
     Img_len = os.stat(Encoded_img).st_size
