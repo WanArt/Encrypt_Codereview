@@ -5,7 +5,7 @@
 	><h3>git checkout dev</h3>
 	><h3>cd Dev</h3>
 	><h3>pip install -r requirements.txt</h3>
-	>Для Linux:
+	>>Для Linux:
 	>><h3>python3 main.py</h3>
 	>Для Windows:
 	>><h3>python main.py</h3>
