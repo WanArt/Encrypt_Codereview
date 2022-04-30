@@ -26,4 +26,10 @@
 	>>
 	>>Дешифровка:
 	>>>![Alt text](/Dev/Screenshots/Sc32.jpg?raw=true "Optional Title")
-	
+	>
+	>Шифр Вернама:
+	>>Шифровка:
+	>>>![Alt text](/Dev/Screenshots/Sc41.jpg?raw=true "Optional Title")
+	>>
+	>>Дешифровка:
+	>>>![Alt text](/Dev/Screenshots/Sc42.jpg?raw=true "Optional Title")
