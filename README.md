@@ -12,7 +12,7 @@
 2. Как пользоваться:
 	>Работа осуществляется с файлами, все операции выполняются в окне программы:
 	>>![Alt text](/Dev/Screenshots/Sc1.jpg?raw=true "Optional Title")
-3. Примеры работы:
+3. Несколько примеров работы программы:
 	>Шифр Цезаря
 	>>Шифровка:
 	>>>![Alt text](/Dev/Screenshots/Sc21.jpg?raw=true "Optional Title")
@@ -33,3 +33,4 @@
 	>>
 	>>Дешифровка:
 	>>>![Alt text](/Dev/Screenshots/Sc42.jpg?raw=true "Optional Title")
+
