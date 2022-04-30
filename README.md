@@ -19,4 +19,11 @@
 	>>
 	>>Дешифровка:
 	>>>![Alt text](/Dev/Screenshots/Sc22.jpg?raw=true "Optional Title")
+	>
+	>Шифр Виженера
+	>>Шифровка:
+	>>>![Alt text](/Dev/Screenshots/Sc31.jpg?raw=true "Optional Title")
+	>>
+	>>Дешифровка:
+	>>>![Alt text](/Dev/Screenshots/Sc32.jpg?raw=true "Optional Title")
 	
