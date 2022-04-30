@@ -3,6 +3,16 @@ from Caesar_Cipher import Caesar_Cipher_Do, Caesar_Cipher_Undo
 
 # Шифр Виженера
 def Vizhener_Cipher_Do(Message, KeyWord):
+    """Шифр Виженера.
+
+        Символы ключа(KeyWord) дублируются,
+        пока его длина не совпадет с длиной
+        Message. Затем в матрице вида
+        алфавит х алфавит ищем пересечение
+        символа KeyWord <-> символа Message,
+        получая зашифрованное сообщение.
+
+    """
     Ans: str = ''
     NewKeyWord: str = ''
     k1 = 0
@@ -25,6 +35,13 @@ def Vizhener_Cipher_Do(Message, KeyWord):
 
 # Дешифровка шифра Виженера
 def Vizhener_Cipher_Undo(Message, KeyWord):
+    """Дешифровка шифра Виженера.
+
+            Аналогично шифру Виженера с тем же
+            ключом, но Message - зашифрованное
+            сообщение.
+
+    """
     Ans: str = ''
     NewKeyWord: str = ''
     k1 = 0

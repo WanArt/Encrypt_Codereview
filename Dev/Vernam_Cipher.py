@@ -10,6 +10,14 @@ Bodo = dict(zip(['R', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'
 
 # Шифр Вернама
 def Vernam_Cipher_Do(Message, KeyWord):
+    """Шифр Вернама.
+
+    Каждому символу из Message ставится
+    в соответствие код Бодо из словаря.
+    Выполняем операцию Код Бодо XOR Ключ(KeyWord).
+    Получаем зашифрованное сообщение.
+
+    """
     Ans: str = ''
     NewMessage: str = ''
     for i in Message:
@@ -51,6 +59,13 @@ def Vernam_Cipher_Do(Message, KeyWord):
 
 # Дешифровка шифра Вернама
 def Vernam_Cipher_Undo(Message, KeyWord):
+    """Дешифровка шифра Вернама.
+
+        Аналогично шифру Вернама с тем же
+        ключом, но Message - зашифрованное
+        сообщение.
+
+    """
     Ans: str = ''
     NewMessage: str = ''
     for i in Message:

@@ -5,6 +5,17 @@ Size = 54
 
 
 def encode_image(Input_Img_Name, Output_Img_Name, Message, Deg):
+    """Шифр Стеганография.
+
+        Переводим Аски код символа
+        в двоичную систему счисления
+        и шифруем в стегоконтейнер,
+        практисески не меняя цвет.
+        Срезаем какое-то кол-во
+        цифр из символа. Получаем
+        загифрованное bmp-изображение
+
+    """
     if Deg not in [1, 2, 4, 8]:
         return False
     Text_len = os.stat(Message).st_size
@@ -37,6 +48,11 @@ def encode_image(Input_Img_Name, Output_Img_Name, Message, Deg):
 
 
 def decode_image(Encoded_img, Output_txt, Symbols_to_read, Deg):
+    """Дешифровка шифра Стеганография.
+
+                Аналогично, в обратную сторону.
+
+        """
     if Deg not in [1, 2, 4, 8]:
         return False
     Img_len = os.stat(Encoded_img).st_size
