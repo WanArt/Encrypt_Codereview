@@ -33,4 +33,3 @@
 	>>
 	>>Дешифровка:
 	>>>![Alt text](/Src/Screenshots/Sc42.jpg?raw=true "Optional Title")
-
