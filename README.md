@@ -1,4 +1,4 @@
-#PYTHON CIPHER PROJECT
+<h1>PYTHON CIPHER PROJECT</h1>
 1. Параметры запуска:
 	>git clone https://github.com/ospanovalen/Encrypt_Codereview.git \
 	>cd Encript_Codereview \
