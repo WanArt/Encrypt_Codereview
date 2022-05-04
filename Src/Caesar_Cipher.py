@@ -1,8 +1,4 @@
-# Алфавиты для шифра Цезаря
-Eng_Upper: str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
-Eng_Lower: str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz'
-Ru_Upper: str = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
-Ru_Lower: str = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюяабвгдеёжзийклмнопрстуфхцчшщъыьэюя'
+from Globals import GlobalsVar as Gv
 
 
 # Шифр Цезаря
@@ -20,14 +16,14 @@ def Caesar_Cipher_Do(Message, Step):
     """
     Ans: str = ''
     for i in Message:
-        if i in Eng_Upper:
-            Language: str = Eng_Upper
-        elif i in Eng_Lower:
-            Language: str = Eng_Lower
-        elif i in Ru_Upper:
-            Language: str = Ru_Upper
+        if i in Gv.Eng_Upper:
+            Language: str = Gv.Eng_Upper
+        elif i in Gv.Eng_Lower:
+            Language: str = Gv.Eng_Lower
+        elif i in Gv.Ru_Upper:
+            Language: str = Gv.Ru_Upper
         else:
-            Language: str = Ru_Lower
+            Language: str = Gv.Ru_Lower
         Pos = Language.find(i) + Step
         if i not in Language:
             Ans += i
@@ -50,14 +46,14 @@ def Caesar_Cipher_Undo(Message, Step):
     """
     Ans: str = ''
     for i in Message:
-        if i in Eng_Upper:
-            Language: str = Eng_Upper
-        elif i in Eng_Lower:
-            Language: str = Eng_Lower
-        elif i in Ru_Upper:
-            Language: str = Ru_Upper
+        if i in Gv.Eng_Upper:
+            Language: str = Gv.Eng_Upper
+        elif i in Gv.Eng_Lower:
+            Language: str = Gv.Eng_Lower
+        elif i in Gv.Ru_Upper:
+            Language: str = Gv.Ru_Upper
         else:
-            Language: str = Ru_Lower
+            Language: str = Gv.Ru_Lower
         Pos = Language.find(i) - Step
         if i not in Language:
             Ans += i

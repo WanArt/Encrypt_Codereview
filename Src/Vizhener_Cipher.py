@@ -1,4 +1,5 @@
 from Caesar_Cipher import Caesar_Cipher_Do, Caesar_Cipher_Undo
+from Globals import GlobalsVar as Gv
 
 
 # Шифр Виженера
@@ -29,10 +30,16 @@ def Vizhener_Cipher_Do(Message, KeyWord):
         k2 += 1
         if len(Message) == k2:
             break
-    Key = [ord(char) - 96 for char in NewKeyWord.lower()]
-    for i in range(len(Key)):
+    Key = [ord(char) - Gv.Shift for char in NewKeyWord.lower()]
+
+    num_of_iterations = len(Key)
+
+    for i in range(num_of_iterations):
         Key[i] -= 1
-    for i in range(len(NewKeyWord)):
+
+    num_of_iterations = len(NewKeyWord)
+
+    for i in range(num_of_iterations):
         Ans += Caesar_Cipher_Do(Message[i], Key[i])
     return Ans
 
@@ -62,9 +69,15 @@ def Vizhener_Cipher_Undo(Message, KeyWord):
         k2 += 1
         if len(Message) == k2:
             break
-    Key = [ord(char) - 96 for char in NewKeyWord.lower()]
-    for i in range(len(Key)):
+    Key = [ord(char) - Gv.Shift for char in NewKeyWord.lower()]
+
+    num_of_iterations = len(Key)
+
+    for i in range(num_of_iterations):
         Key[i] -= 1
-    for i in range(len(NewKeyWord)):
+
+    num_of_iterations = len(NewKeyWord)
+
+    for i in range(num_of_iterations):
         Ans += Caesar_Cipher_Undo(Message[i], Key[i])
     return Ans

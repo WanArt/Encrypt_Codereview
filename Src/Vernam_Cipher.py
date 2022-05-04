@@ -1,11 +1,18 @@
-from Find_In_Dict import get_symbol
+from Globals import GlobalsVar as Gv
 
-# Символы в Коде Бодо для шифра Вернама
-Bodo = dict(zip(['R', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O',
-                 'P', 'Q', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', ' '],
-                ['01010', '00011', '11001', '01110', '01001', '00001', '01101', '11010', '10100', '00110',
-                 '01011', '01111', '10010', '11100', '01100', '11000', '10110', '10111', '00101',
-                 '10000', '00111', '11110', '10011', '11101', '10101', '10001', '00100']))
+
+# Получить ключ по значению
+def get_symbol(sl, val):
+    """Фукнция находит аргумент словаря по ключу
+
+        Параметры функции:
+            sl - словарь
+            val - значение ключа
+
+    """
+    for a, b in sl.items():
+        if val == b:
+            return a
 
 
 # Шифр Вернама
@@ -25,7 +32,7 @@ def Vernam_Cipher_Do(Message, KeyWord):
     Ans: str = ''
     NewMessage: str = ''
     for i in Message:
-        NewMessage += Bodo[i]
+        NewMessage += Gv.Bodo[i]
     k1 = 0
     k2 = 0
     NewKeyWord: str = ''
@@ -38,24 +45,33 @@ def Vernam_Cipher_Do(Message, KeyWord):
         if len(NewMessage) == k2:
             break
     NewMessageList = list(NewMessage)
-    for i in range(len(NewMessageList)):
+
+    num_of_iterations = len(NewMessageList)
+
+    for i in range(num_of_iterations):
         NewMessageList[i] = int(list(NewMessage)[i]) ^ int(list(NewKeyWord)[i])
     NewMessage = ''
     k1 = 0
     CipherList = []
-    for i in range(len(NewMessageList)):
+
+    num_of_iterations = len(NewMessageList)
+
+    for i in range(num_of_iterations):
         NewMessageList[i] = str(NewMessageList[i])
-    for i in range(len(NewMessageList)):
+
+    num_of_iterations = len(NewMessageList)
+
+    for i in range(num_of_iterations):
         NewMessage += NewMessageList[i]
         k1 += 1
-        if k1 % 5 == 0:
+        if k1 % Gv.Size_Condition == 0:
             CipherList.append(NewMessage)
             NewMessage = ''
     length = len(CipherList)
     p = 0
     for i in range(length):
         try:
-            Ans += get_symbol(Bodo, CipherList[i])
+            Ans += get_symbol(Gv.Bodo, CipherList[i])
         except TypeError:
             p = 0
     return Ans
@@ -77,7 +93,7 @@ def Vernam_Cipher_Undo(Message, KeyWord):
     Ans: str = ''
     NewMessage: str = ''
     for i in Message:
-        NewMessage += Bodo[i]
+        NewMessage += Gv.Bodo[i]
     k1 = 0
     k2 = 0
     NewKeyWord: str = ''
@@ -90,23 +106,35 @@ def Vernam_Cipher_Undo(Message, KeyWord):
         if len(NewMessage) == k2:
             break
     NewMessageList = list(NewMessage)
-    for i in range(len(NewMessageList)):
+
+    num_of_iterations = len(NewMessageList)
+
+    for i in range(num_of_iterations):
         NewMessageList[i] = int(list(NewMessage)[i]) ^ int(list(NewKeyWord)[i])
     NewMessage = ''
     k1 = 0
     CipherList = []
-    for i in range(len(NewMessageList)):
+
+    num_of_iterations = len(NewMessageList)
+
+    for i in range(num_of_iterations):
         NewMessageList[i] = str(NewMessageList[i])
-    for i in range(len(NewMessageList)):
+
+    num_of_iterations = len(NewMessageList)
+
+    for i in range(num_of_iterations):
         NewMessage += NewMessageList[i]
         k1 += 1
-        if k1 % 5 == 0:
+        if k1 % Gv.Size_Condition == 0:
             CipherList.append(NewMessage)
             NewMessage = ''
     p = 0
-    for i in range(len(CipherList)):
+
+    num_of_iterations = len(CipherList)
+
+    for i in range(num_of_iterations):
         try:
-            Ans += get_symbol(Bodo, CipherList[i])
+            Ans += get_symbol(Gv.Bodo, CipherList[i])
         except TypeError:
             p = 0
     return Ans
