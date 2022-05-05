@@ -1,4 +1,4 @@
-from Globals import GlobalsVar as Gv
+from Src.Globals import GlobalsVar as Gv
 
 
 # Получить ключ по значению

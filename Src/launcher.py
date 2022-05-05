@@ -4,13 +4,13 @@ import os
 import pandas as pd
 import tkinter as tk
 from PIL import ImageTk, Image
-from Caesar_Cipher import Caesar_Cipher_Do, Caesar_Cipher_Undo
-from Vizhener_Cipher import Vizhener_Cipher_Do, Vizhener_Cipher_Undo
-from Vernam_Cipher import Vernam_Cipher_Undo, Vernam_Cipher_Do
-from Freq_Analysis import Freq_Hack
-from Alen_Cipher import Alen_Cipher_Do, Alen_Cipher_Undo
-from OneTimePad_Cipher import One_Time_Pad_Cipher_Do, One_Time_Pad_Cipher_Undo
-from Steganography import encode_image, decode_image
+from Src.Caesar_Cipher import Caesar_Cipher_Do, Caesar_Cipher_Undo
+from Src.Vizhener_Cipher import Vizhener_Cipher_Do, Vizhener_Cipher_Undo
+from Src.Vernam_Cipher import Vernam_Cipher_Undo, Vernam_Cipher_Do
+from Src.Freq_Analysis import Freq_Hack
+from Src.Alen_Cipher import Alen_Cipher_Do, Alen_Cipher_Undo
+from Src.OneTimePad_Cipher import One_Time_Pad_Cipher_Do, One_Time_Pad_Cipher_Undo
+from Src.Steganography import encode_image, decode_image
 
 
 # Класс сборки программы для запуска
@@ -19,13 +19,15 @@ class Launch:
     def start():
         # Путь к файлу
         dir_path = pathlib.Path.cwd()
-        path1 = Path(pathlib.Path.cwd(), 'Files', 'Input.txt')
-        path2 = Path(pathlib.Path.cwd(), 'Files', 'Output.txt')
-        path3 = Path(pathlib.Path.cwd(), 'Files', 'Keys.txt')
-        path_Alen_Cipher_Enc = Path(pathlib.Path.cwd(), 'Files', 'Alen_Cipher_Encrypt_Input.txt')
-        path_Alen_Cipher_Key = Path(pathlib.Path.cwd(), 'Files', 'Alen_Cipher_Key_Input.txt')
-        path_Bmp1 = Path(pathlib.Path.cwd(), 'Files', 'Bmp_Input.bmp')
-        path_Bmp2 = Path(pathlib.Path.cwd(), 'Files', 'Bmp-Output.bmp')
+        path1 = Path(pathlib.Path.cwd(), 'Src', 'Files', 'Input.txt')
+        path2 = Path(pathlib.Path.cwd(), 'Src', 'Files', 'Output.txt')
+        path3 = Path(pathlib.Path.cwd(), 'Src', 'Files', 'Keys.txt')
+        path_Alen_Cipher_Enc = Path(pathlib.Path.cwd(), 'Src', 'Files',
+                                    'Alen_Cipher_Encrypt_Input.txt')
+        path_Alen_Cipher_Key = Path(pathlib.Path.cwd(), 'Src', 'Files',
+                                    'Alen_Cipher_Key_Input.txt')
+        path_Bmp1 = Path(pathlib.Path.cwd(), 'Src', 'Files', 'Bmp_Input.bmp')
+        path_Bmp2 = Path(pathlib.Path.cwd(), 'Src', 'Files', 'Bmp-Output.bmp')
 
         # path_Key = Path(pathlib.Path.cwd(), 'Files', 'Keys.txt')
         # path_Fon = Path(pathlib.Path.cwd(), 'Files', 'Fon.jpg')

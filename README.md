@@ -2,7 +2,6 @@
 1. Параметры запуска:
 	>git clone https://github.com/ospanovalen/Encrypt_Codereview.git \
 	>cd Encript_Codereview \
-	>cd Src \
 	>pip install -r requirements.txt 
 	>>Для Linux:
 	>>>python3 main.py 

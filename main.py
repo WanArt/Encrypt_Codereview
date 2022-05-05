@@ -1,4 +1,4 @@
-from launcher import Launch
+from Src.launcher import Launch
 
 """Запуск программы"""
 Launch.start()

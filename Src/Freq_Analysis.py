@@ -1,7 +1,7 @@
 import math
 from collections import Counter
-from Caesar_Cipher import Caesar_Cipher_Undo
-from Globals import GlobalsVar as Gv
+from Src.Caesar_Cipher import Caesar_Cipher_Undo
+from Src.Globals import GlobalsVar as Gv
 
 
 # Частотный анализ

@@ -1,6 +1,6 @@
 import os
 import sys
-from Globals import GlobalsVar as Gv
+from Src.Globals import GlobalsVar as Gv
 
 
 def encode_image(Input_Img_Name, Output_Img_Name, Message, Deg):
