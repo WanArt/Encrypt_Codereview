@@ -15,4 +15,4 @@
 	>>Работа осуществляется с файлами, все операции выполняются в окне программы:
 	>>>![Alt text](/Src/Screenshots/Sc1.jpg?raw=true "Optional Title")
 3. Несколько примеров работы программы:
-	>![Alt text](/Src/Screenshots/EncryptExample.mp4?raw=true "Optional Title")
+	>![Alt text](/Src/Screenshots/EncryptExample.gif?raw=true "Optional Title")
