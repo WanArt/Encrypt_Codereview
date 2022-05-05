@@ -39,3 +39,9 @@ class GlobalsVar:
     Contrast_Size = 100
     Font_Size_25 = 25
     Font_Size_20 = 20
+    Row_Size_1 = 1
+    Row_Size_2 = 2
+    Row_Size_3 = 3
+    Row_Size_4 = 4
+    Column_Size_1 = 1
+    Column_Size_3 = 3

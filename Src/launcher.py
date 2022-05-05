@@ -171,24 +171,29 @@ class Launch:
         tk.Label(root, text="Изменяйте входные данные", font=Gv.Font_Size_25, fg='black', bg='yellow').grid(row=0,
                                                                                                             column=0,
                                                                                                             sticky='w')
-        tk.Label(root, text="    в папке Files", font=Gv.Font_Size_25, fg='black', bg='yellow').grid(row=1, column=0,
+        tk.Label(root, text="    в папке Files", font=Gv.Font_Size_25, fg='black', bg='yellow').grid(row=Gv.Row_Size_1,
+                                                                                                     column=0,
                                                                                                      sticky='w')
-        tk.Label(root, text="            Шифрование", font=Gv.Font_Size_20, fg='black', bg='white').grid(row=2,
-                                                                                                         column=0,
-                                                                                                         sticky='w')
-        tk.Label(root, text="Дешифрование", font=Gv.Font_Size_20, fg='black', bg='white').grid(row=2, column=1,
+        tk.Label(root, text="            Шифрование", font=Gv.Font_Size_20, fg='black', bg='white').grid(
+            row=Gv.Row_Size_2,
+            column=0,
+            sticky='w')
+        tk.Label(root, text="Дешифрование", font=Gv.Font_Size_20, fg='black', bg='white').grid(row=Gv.Row_Size_2,
+                                                                                               column=Gv.Column_Size_1,
                                                                                                sticky='w')
-        tk.Label(root, text="           Взлом", font=Gv.Font_Size_20, fg='black', bg='white').grid(row=2, column=3,
-                                                                                                   sticky='w')
+        tk.Label(root, text="           Взлом", font=Gv.Font_Size_20, fg='black', bg='white').grid(
+            row=Gv.Row_Size_2,
+            column=Gv.Column_Size_3,
+            sticky='w')
         root.configure(bg='black')
         f1 = tk.Frame(root)
-        f1.grid(row=3, column=0, sticky='nsew')
+        f1.grid(row=Gv.Row_Size_3, column=0, sticky='nsew')
         f2 = tk.Frame(root)
-        f2.grid(row=3, column=1, sticky='nsew')
+        f2.grid(row=Gv.Row_Size_3, column=Gv.Column_Size_1, sticky='nsew')
         f3 = tk.Frame(root)
-        f3.grid(row=3, column=3, sticky='nsew')
+        f3.grid(row=Gv.Row_Size_3, column=Gv.Column_Size_3, sticky='nsew')
         f4 = tk.Frame(root)
-        f4.grid(row=4, column=0, sticky='nsew')
+        f4.grid(row=Gv.Row_Size_4, column=0, sticky='nsew')
         encryption_button1 = tk.Button(f1, text="Шифр Цезаря", fg='white', bg='gray', command=encrypt_Caesar)
         encryption_button1.pack(side="top")
         encryption_button2 = tk.Button(f1, text="Шифр Виженера", fg='white', bg='gray', command=encrypt_Vizhener)
@@ -217,7 +222,7 @@ class Launch:
         decryption_button6.pack(side="top")
         hack_button = tk.Button(f3, text="Автоматический частотный взлом", fg='white', bg='gray', command=hack)
         hack_button.pack(side="top")
-        quit_button = tk.Button(f1, text="Выйти", font=20, fg='white', bg='red', command=root.destroy)
+        quit_button = tk.Button(f1, text="Выйти", font=Gv.Font_Size_20, fg='white', bg='red', command=root.destroy)
         quit_button.pack(side="top")
         root.configure(bg='white')
         root.mainloop()
