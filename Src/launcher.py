@@ -11,6 +11,7 @@ from Src.Freq_Analysis import Freq_Hack
 from Src.Alen_Cipher import Alen_Cipher_Do, Alen_Cipher_Undo
 from Src.OneTimePad_Cipher import One_Time_Pad_Cipher_Do, One_Time_Pad_Cipher_Undo
 from Src.Steganography import encode_image, decode_image
+from Src.Globals import GlobalsVar as Gv
 
 
 # Класс сборки программы для запуска
@@ -167,12 +168,18 @@ class Launch:
         root = tk.Tk()
         root.title("Encrypter")
         root.geometry("650x300+200+100")
-        tk.Label(root, text="Изменяйте входные данные", font=25, fg='black', bg='yellow').grid(row=0, column=0,
+        tk.Label(root, text="Изменяйте входные данные", font=Gv.Font_Size_25, fg='black', bg='yellow').grid(row=0,
+                                                                                                            column=0,
+                                                                                                            sticky='w')
+        tk.Label(root, text="    в папке Files", font=Gv.Font_Size_25, fg='black', bg='yellow').grid(row=1, column=0,
+                                                                                                     sticky='w')
+        tk.Label(root, text="            Шифрование", font=Gv.Font_Size_20, fg='black', bg='white').grid(row=2,
+                                                                                                         column=0,
+                                                                                                         sticky='w')
+        tk.Label(root, text="Дешифрование", font=Gv.Font_Size_20, fg='black', bg='white').grid(row=2, column=1,
                                                                                                sticky='w')
-        tk.Label(root, text="    в папке Files", font=25, fg='black', bg='yellow').grid(row=1, column=0, sticky='w')
-        tk.Label(root, text="            Шифрование", font=20, fg='black', bg='white').grid(row=2, column=0, sticky='w')
-        tk.Label(root, text="Дешифрование", font=20, fg='black', bg='white').grid(row=2, column=1, sticky='w')
-        tk.Label(root, text="           Взлом", font=20, fg='black', bg='white').grid(row=2, column=3, sticky='w')
+        tk.Label(root, text="           Взлом", font=Gv.Font_Size_20, fg='black', bg='white').grid(row=2, column=3,
+                                                                                                   sticky='w')
         root.configure(bg='black')
         f1 = tk.Frame(root)
         f1.grid(row=3, column=0, sticky='nsew')

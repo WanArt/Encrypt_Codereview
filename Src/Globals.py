@@ -37,3 +37,5 @@ class GlobalsVar:
     Size_Condition = 5
     Shift = 96
     Contrast_Size = 100
+    Font_Size_25 = 25
+    Font_Size_20 = 20
