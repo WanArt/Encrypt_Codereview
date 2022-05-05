@@ -9,26 +9,10 @@
 	>>Для Windows 10:
 	>>>python main.py
 2. Как пользоваться:
-	>Работа осуществляется с файлами, все операции выполняются в окне программы:
-	>>![Alt text](/Src/Screenshots/Sc1.jpg?raw=true "Optional Title")
+	>В папке Examples пишите текст для шифровки/дешифровки в файл Input.txt, \
+	>По надобности пишите ключ шифрования в файл Keys.txt \
+	>Результат появится в папке Output.txt
+	>>Работа осуществляется с файлами, все операции выполняются в окне программы:
+	>>>![Alt text](/Src/Screenshots/Sc1.jpg?raw=true "Optional Title")
 3. Несколько примеров работы программы:
-	>Шифр Цезаря
-	>>Шифровка:
-	>>>![Alt text](/Src/Screenshots/Sc21.jpg?raw=true "Optional Title")
-	>>
-	>>Дешифровка:
-	>>>![Alt text](/Src/Screenshots/Sc22.jpg?raw=true "Optional Title")
-	>
-	>Шифр Виженера
-	>>Шифровка:
-	>>>![Alt text](/Src/Screenshots/Sc31.jpg?raw=true "Optional Title")
-	>>
-	>>Дешифровка:
-	>>>![Alt text](/Src/Screenshots/Sc32.jpg?raw=true "Optional Title")
-	>
-	>Шифр Вернама:
-	>>Шифровка:
-	>>>![Alt text](/Src/Screenshots/Sc41.jpg?raw=true "Optional Title")
-	>>
-	>>Дешифровка:
-	>>>![Alt text](/Src/Screenshots/Sc42.jpg?raw=true "Optional Title")
+	>![Alt text](/Src/Screenshots/EncryptExample.mp4?raw=true "Optional Title")

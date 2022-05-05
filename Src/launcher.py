@@ -20,15 +20,15 @@ class Launch:
     def start():
         # Путь к файлу
         dir_path = pathlib.Path.cwd()
-        path1 = Path(pathlib.Path.cwd(), 'Src', 'Files', 'Input.txt')
-        path2 = Path(pathlib.Path.cwd(), 'Src', 'Files', 'Output.txt')
-        path3 = Path(pathlib.Path.cwd(), 'Src', 'Files', 'Keys.txt')
-        path_Alen_Cipher_Enc = Path(pathlib.Path.cwd(), 'Src', 'Files',
+        path1 = Path(pathlib.Path.cwd(), 'Examples', 'Input.txt')
+        path2 = Path(pathlib.Path.cwd(), 'Examples', 'Output.txt')
+        path3 = Path(pathlib.Path.cwd(), 'Examples', 'Keys.txt')
+        path_Alen_Cipher_Enc = Path(pathlib.Path.cwd(), 'Examples',
                                     'Alen_Cipher_Encrypt_Input.txt')
-        path_Alen_Cipher_Key = Path(pathlib.Path.cwd(), 'Src', 'Files',
+        path_Alen_Cipher_Key = Path(pathlib.Path.cwd(), 'Examples',
                                     'Alen_Cipher_Key_Input.txt')
-        path_Bmp1 = Path(pathlib.Path.cwd(), 'Src', 'Files', 'Bmp_Input.bmp')
-        path_Bmp2 = Path(pathlib.Path.cwd(), 'Src', 'Files', 'Bmp-Output.bmp')
+        path_Bmp1 = Path(pathlib.Path.cwd(), 'Examples', 'Bmp_Input.bmp')
+        path_Bmp2 = Path(pathlib.Path.cwd(), 'Examples', 'Bmp-Output.bmp')
 
         # path_Key = Path(pathlib.Path.cwd(), 'Files', 'Keys.txt')
         # path_Fon = Path(pathlib.Path.cwd(), 'Files', 'Fon.jpg')
