@@ -1,7 +1,18 @@
-#PYTHON CODEREVIEW
-<h3>git clone https://github.com/ospanovalen/Encrypt_Codereview.git</h3>
-<h3>cd Encript_Codereview</h3>
-<h3>git checkout dev</h3>
-<h3>cd Dev</h3>
-<h3>pip install -r requirements.txt</h3>
-<h3>python3 main.py</h3>
+><h1>PYTHON CIPHER PROJECT</h1>
+1. Параметры запуска:
+	>git clone https://github.com/ospanovalen/Encrypt_Codereview.git \
+	>cd Encript_Codereview \
+	>pip install -r requirements.txt 
+	>>Для Linux:
+	>>>python3 main.py 
+	>>
+	>>Для Windows 10:
+	>>>python main.py
+2. Как пользоваться:
+	>В папке Examples пишите текст для шифровки/дешифровки в файл Input.txt, \
+	>По надобности пишите ключ шифрования в файл Keys.txt \
+	>Результат появится в папке Output.txt
+	>>Работа осуществляется с файлами, все операции выполняются в окне программы:
+	>>>![Alt text](/Src/Screenshots/Sc1.jpg?raw=true "Optional Title")
+3. Несколько примеров работы программы:
+	>![Alt text](/Src/Screenshots/EncryptExample.gif?raw=true "Optional Title")

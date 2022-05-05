@@ -1,0 +1,3 @@
+pandas==1.4.2
+Pillow==9.1.0
+onetimepad==1.4
